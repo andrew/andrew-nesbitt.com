@@ -26,6 +26,13 @@
   </article>
   <article class='project'>
     <h3>
+      GitHub Plus
+      <a href='https://github.com/andrew/github-plus'>github.com/andrew/github-plus</a>
+    </h3>
+    <p>A Chrome extension that adds extra features to GitHub</p>
+  </article>
+  <article class='project'>
+    <h3>
       24 Pull Requests
       <a href='http://24pullrequests.com/'>24pullrequests.com</a>
     </h3>
@@ -38,20 +45,24 @@
     </h3>
     <p>A tumblr blog highlighting the best of GitHub</p>
   </article>
+  <article class='project'>
+    <h3>
+      Deploytracking
+      <a href='https://deploytracking.heroku.com/'>deploytracking.heroku.com</a>
+    </h3>
+    <p>Records deployments via capistrano or heroku</p>
+  </article>
 </section>
 
 <section>
-<h2>Events</h2>
+<h2>Upcoming Events</h2>
+<ul>
 <% for (var e = 0; e < events.length; e++) {  %>
   <% var event = events[e] %>
-  <article>
-    <h3><a href='<%= event.external %>'><%= event.title %></a></h3>
-    <p><%= event.subtitle %></p>
-  </article>
+  <li>
+    <h3><%= event.title %><a href='<%= event.external %>' target='_blank'><%= event.subtitle %></a></h3>
+    <p></p>
+  </li>
 <% } %>
-</section>
-
-<section>
-<h2>Articles</h2>
-
+</ul>
 </section>

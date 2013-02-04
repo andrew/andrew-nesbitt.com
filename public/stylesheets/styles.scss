@@ -1,9 +1,14 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300);
+
 body{
   margin:0;
   padding:0;
   font-family:helvetica;
   font-size:16px;
+}
+ul{
+  list-style:none;
+  padding:0 3% 0;
 }
 header{
   background:url('/images/background.jpg') left center;

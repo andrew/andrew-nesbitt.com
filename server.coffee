@@ -2,6 +2,7 @@ express = require 'express'
 ejs = require 'ejs'
 partials = require 'express-partials'
 sass = require 'node-sass'
+Lanyrd= require 'lanyrd'
 
 app = express()
 
@@ -20,7 +21,8 @@ app.configure ->
   app.set('views',__dirname + "/views/")
 
 app.get "/", (req,res) ->
-  res.render 'index.ejs'
+  Lanyrd.futureEvents 'teabass', (err, resp, events)->
+    res.render 'index.ejs', events: events
 
 port = process.env.PORT || 8080
 app.listen port

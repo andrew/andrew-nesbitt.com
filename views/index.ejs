@@ -42,7 +42,13 @@
 
 <section>
 <h2>Events</h2>
-
+<% for (var e = 0; e < events.length; e++) {  %>
+  <% var event = events[e] %>
+  <article>
+    <h3><a href='<%= event.external %>'><%= event.title %></a></h3>
+    <p><%= event.subtitle %></p>
+  </article>
+<% } %>
 </section>
 
 <section>

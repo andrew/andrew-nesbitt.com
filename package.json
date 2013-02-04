@@ -6,6 +6,7 @@
     "coffee-script": ">=1.4.0",
     "ejs":  ">=0.8.3",
     "express-partials": ">=0.0.6",
-    "node-sass": ">= 0.3.0"
+    "node-sass": ">= 0.3.0",
+    "lanyrd": ">= 0.0.1"
   }
 }
